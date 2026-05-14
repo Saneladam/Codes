@@ -1,0 +1,1 @@
+Write a Python function named `convert_to_rational` that takes a SymPy expression as input and returns its rational representation as output.

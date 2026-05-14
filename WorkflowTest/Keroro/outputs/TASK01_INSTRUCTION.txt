@@ -1,0 +1,55 @@
+I. Introduction (9:00-9:30)
+  Brief overview of the workshop and its objectives: "Workshop Objectives: This workshop aims to provide participants with a comprehensive understanding of Linux basics, scripting with Python, and networking with SSH. By the end of the workshop, participants will be able to install and run a Linux VM, write and run Python scripts, and connect to a remote server using SSH."
+  Workshop rules and expectations
+  Interactive session: "What do you know about Linux?" - a brief quiz to assess participants' prior knowledge
+
+II. Linux Basics (9:30-10:30)
+  Installing and running a Linux VM
+  Basic commands (cd, ls, mkdir, etc.)
+  File management and organization
+  Technical Requirements: Participants are required to bring their own laptop with the following software installed: Linux VM image (Ubuntu 20.04 or later), Python 3.9 or later interpreter, and SSH client software (e.g. PuTTY or OpenSSH).
+  Interactive session: "Hands-on Linux basics" - participants will practice basic Linux commands
+
+III. Scripting with Python (10:50-11:50)
+  Introduction to Python
+  Basic scripting concepts
+  Fun project: ollama (write and interact with local AI)
+  Technical Requirements: Participants are required to bring their own laptop with the following software installed: Linux VM image (Ubuntu 20.04 or later), Python 3.9 or later interpreter, and SSH client software (e.g. PuTTY or OpenSSH).
+  Interactive session: "Python scripting challenge" - participants will write and run a Python script
+
+IV. Networking with SSH (12:20-13:20)
+  Introduction to SSH
+  Connecting to a remote server
+  File transfer and security
+  Technical Requirements: Participants are required to bring their own laptop with the following software installed: Linux VM image (Ubuntu 20.04 or later), Python 3.9 or later interpreter, and SSH client software (e.g. PuTTY or OpenSSH).
+  Interactive session: "SSH networking challenge" - participants will connect to a remote server and transfer files
+
+V. Linux File System (13:40-15:00)
+  Exploring the Linux file system
+  Creating and managing files
+  File system security and permissions
+  Technical Requirements: Participants are required to bring their own laptop with the following software installed: Linux VM image (Ubuntu 20.04 or later), Python 3.9 or later interpreter, and SSH client software (e.g. PuTTY or OpenSSH).
+  Interactive session: "Linux file system exploration" - participants will explore the Linux file system
+
+VI. Wrap-up and Q&A (15:00- End)
+  Summary of the workshop and its objectives
+  Q&A session for attendees to ask questions and clarify any doubts.
+
+Workshop Materials:
+- Linux VM image (Ubuntu 20.04 or later)
+- Python 3.9 or later interpreter
+- SSH client software (e.g. PuTTY or OpenSSH)
+- Workshop manual and handouts
+
+Workshop Equipment:
+- Computers with Linux VM installed
+- Python interpreter installed on each computer
+- SSH client software installed on each computer
+
+Workshop Schedule:
+- 9:00-9:30: Introduction and workshop rules
+- 9:30-10:30: Linux Basics
+- 10:50-11:50: Scripting with Python
+- 12:20-13:20: Networking with SSH
+- 13:40-15:00: Linux File System
+- 15:00- End: Wrap-up and Q&A

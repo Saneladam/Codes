@@ -1,0 +1,23 @@
+---
+title: My first R Markdown document
+author: Roman
+output: pdf_document
+---
+
+# Hi
+This is the first paragraph
+
+And this is the second one
+
+
+This will be a list
+* one
+* second
+* three
+
+
+## Subsections
+
+### Subsubsections
+
+*Italics* **Bold**

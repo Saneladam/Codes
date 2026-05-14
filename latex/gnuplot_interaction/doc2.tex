@@ -1,0 +1,60 @@
+% \documentclass{article}
+% \usepackage{graphicx}
+
+% \begin{document}
+
+% \section{The First Section}
+
+% This is a different document. We will include a \LaTeX\ file
+% containing the graph below.
+
+% % \begin{figure}[h]
+% %   \begin{center}
+% %     \input{cairolatex.tex}
+% %   \end{center}
+% %   \caption{A graphics file included in \LaTeX, with \LaTeX\ labels}
+% % \end{figure}
+
+% \begin{figure}[h]
+%   \centering
+%   \input{cairolatex.tex}
+%   \caption{A graphics file included in \LaTeX, with \LaTeX\ labels}
+% \end{figure}
+
+% And here is a second paragraph. The graph should have
+% been included before.
+
+% \section{The Second Section}
+
+% The second section really contains only a very short text.
+
+% \end{document}
+
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{transparent}
+
+\begin{document}
+
+\section{The First Section}
+
+This is a different document. We will include a \LaTeX\ file
+containing the graph below.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.7\textwidth]{test.png}
+  \caption{A graphics file included in \LaTeX, with \LaTeX\ labels}
+\end{figure}
+
+
+And here is a second paragraph. The graph should have
+been included before.
+
+\section{The Second Section}
+
+The second section really contains only a very short text.
+
+
+\end{document}

@@ -1,0 +1,2 @@
+source /home/akash/Electronics/esp_web/build/bootloader/gdbinit/symbols
+source /home/akash/Electronics/esp_web/build/bootloader/gdbinit/connect

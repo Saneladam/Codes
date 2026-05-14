@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Información de Román</title>
+    <link>localhost:1313</link>
+    <description>Recent content on Información de Román</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 28 Feb 2026 00:44:24 +0100</lastBuildDate>
+    <atom:link href="localhost:1313index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Autobiography</title>
+      <link>localhost:1313autobiography/</link>
+      <pubDate>Sat, 28 Feb 2026 00:44:24 +0100</pubDate>
+      <guid>localhost:1313autobiography/</guid>
+      <description>&lt;p&gt;This is my autobiography&lt;/p&gt;&#xA;&lt;p&gt;Here is some content. This is all in Markdown.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;List item&lt;/li&gt;&#xA;&lt;li&gt;some more&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;dl&gt;&#xA;&lt;dt&gt;Dictionary&lt;/dt&gt;&#xA;&lt;dd&gt;Definitions&lt;/dd&gt;&#xA;&lt;/dl&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;one&lt;/li&gt;&#xA;&lt;li&gt;two&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>localhost:1313about/</link>
+      <pubDate>Sat, 28 Feb 2026 00:41:11 +0100</pubDate>
+      <guid>localhost:1313about/</guid>
+      <description>&lt;p&gt;Here is some content. This is all in Markdown.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;List item&lt;/li&gt;&#xA;&lt;li&gt;some more&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;dl&gt;&#xA;&lt;dt&gt;Dictionary&lt;/dt&gt;&#xA;&lt;dd&gt;Definitions&lt;/dd&gt;&#xA;&lt;/dl&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;one&lt;/li&gt;&#xA;&lt;li&gt;two&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>localhost:1313posts/about/</link>
+      <pubDate>Sat, 28 Feb 2026 00:41:11 +0100</pubDate>
+      <guid>localhost:1313posts/about/</guid>
+      <description>&lt;p&gt;Here is some content. This is all in Markdown.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;List item&lt;/li&gt;&#xA;&lt;li&gt;some more&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;dl&gt;&#xA;&lt;dt&gt;Dictionary&lt;/dt&gt;&#xA;&lt;dd&gt;Definitions&lt;/dd&gt;&#xA;&lt;/dl&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;one&lt;/li&gt;&#xA;&lt;li&gt;two&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
+    </item>
+  </channel>
+</rss>

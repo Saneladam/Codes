@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Información de Román</title>
+    <link>localhost:1313posts/</link>
+    <description>Recent content in Posts on Información de Román</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 28 Feb 2026 00:41:11 +0100</lastBuildDate>
+    <atom:link href="localhost:1313posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>localhost:1313posts/about/</link>
+      <pubDate>Sat, 28 Feb 2026 00:41:11 +0100</pubDate>
+      <guid>localhost:1313posts/about/</guid>
+      <description>&lt;p&gt;Here is some content. This is all in Markdown.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;List item&lt;/li&gt;&#xA;&lt;li&gt;some more&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;dl&gt;&#xA;&lt;dt&gt;Dictionary&lt;/dt&gt;&#xA;&lt;dd&gt;Definitions&lt;/dd&gt;&#xA;&lt;/dl&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;one&lt;/li&gt;&#xA;&lt;li&gt;two&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
+    </item>
+  </channel>
+</rss>

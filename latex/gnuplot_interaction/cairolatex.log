@@ -1,0 +1,109 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.3.7)  22 MAR 2026 17:43
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**/home/akash/Code/latex/gnuplot_interaction/cairolatex.tex
+(/home/akash/Code/latex/gnuplot_interaction/cairolatex.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+\gptboxheight=\skip49
+\gptboxwidth=\skip50
+\gptboxtext=\box53
+! Undefined control sequence.
+l.82     \definecolor
+                     {tbcol}{rgb}{1,1,1}%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.82     \definecolor{t
+                       bcol}{rgb}{1,1,1}%
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no t in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 1 in font nullfont!
+! Undefined control sequence.
+l.207     \definecolor
+                      {tbcol}{rgb}{1,1,1}%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no t in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 1 in font nullfont!
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 251.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 251.
+! Undefined control sequence.
+<recently read> \Large 
+                       
+l.251     \gplbacktext
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package graphicx or graphics not loaded.
+
+See the gnuplot documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.252 ...360.00bp},height={216.00bp}]{cairolatex}}
+                                                  %
+The gnuplot epslatex terminal needs graphicx.sty or graphics.sty.
+
+)
+! Emergency stop.
+<*> ...de/latex/gnuplot_interaction/cairolatex.tex
+                                                  
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 44 strings out of 469515
+ 838 string characters out of 5470808
+ 434756 words of memory out of 5000000
+ 28795 multiletter control sequences out of 15000+600000
+ 628029 words of font info for 41 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 22i,10n,26p,165b,226s stack positions out of 10000i,1000n,20000p,200000b,200000s
+!  ==> Fatal error occurred, no output PDF file produced!

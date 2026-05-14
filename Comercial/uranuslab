@@ -1,0 +1,78 @@
+#!/usr/bin/bash
+
+# =============================================================================
+# Authors:      Román García Guill
+# Contact:      romangarciaguill@gmail.com
+# Created:      Tue 31. Mar 2026
+#
+# Purpose:      Creates a shadow python executer to run python files by blocks
+#               like running jupyer cells.
+# =============================================================================
+
+create_runner() {
+    # Creates a tmp.py file inside a /tmp/tmp.uranus_directory
+    local runner
+    local runner_field
+    local new_runner_field
+    runner_field=$(mktemp -d)
+    new_runner_field="/tmp/tmp.uranus_${runner_field#'/tmp/tmp.'}"
+    mv "$runner_field" "$new_runner_field"
+    runner=$(mktemp -p "$new_runner_field")
+    mv "$runner" "${runner}.py"
+    echo "${runner}.py"
+}
+
+mark_shadow(){
+    # This creates a shadow marker to anounce the existance of a tmp file runner
+    local runner
+    if [[ -f ".uranus" ]]; then
+        # Remembers the name of the tmp.py file
+        runner=$(cat ".uranus")
+        # Recreates them
+        [[ -f $runner ]] || touch "$runner"
+    else
+        # Writes the name of the tmp.py file into .uranus
+        runner=$(create_runner)
+        echo "$runner" > ".uranus"
+    fi
+    echo "$runner"
+}
+
+add2runner() {
+    # Adds to the runner the sdin
+    local runner
+    runner="$1"
+    cat >> "$runner"
+}
+
+execute_runner() {
+    local runner="$1"
+    python "$runner"
+}
+
+main() {
+    local runner
+    local stdin
+    local output
+
+    runner=$(mark_shadow)
+    stdin=$1
+
+    printf "%s\n" "$stdin" | add2runner "$runner"
+
+    output=$(execute_runner "$runner")
+
+    # Rewrites the stdin into the vim file
+    echo "$stdin"
+    # Sends stdout to notify-send
+    notify-send "===> Python Output <===" "$output"
+}
+
+capture_stdin(){
+    cat
+}
+
+###############################################################################
+
+stdin=$( capture_stdin )
+main "$stdin"

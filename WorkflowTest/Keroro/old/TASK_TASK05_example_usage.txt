@@ -1,0 +1,6 @@
+from sympy import symbols, Eq, solve
+
+x = symbols('x')
+print(solve(Eq(x**2 + 1, 0), x)) 
+print(solve(Eq(3*x - 4, 5), x))
+print(solve(Eq(x**2 - 6*x + 8, 0), x))

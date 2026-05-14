@@ -1,0 +1,11 @@
+TASK01|TEXT|README.md|Create a README file with a brief introduction to SymPy and its usage.
+
+TASK02|CODE|sympy_demo.py|Write a complete runnable Python script using SymPy, including a function named `solve_equation` that takes two inputs (a string and an integer) and returns the solution as an output.
+
+TASK03|TEXT|notes.txt|Document the purpose of each section in the code, explaining how it contributes to the overall functionality.
+
+TASK04|CODE|utils.py|Write a Python function named `convert_to_rational` that takes a SymPy expression as input and returns its rational representation as output.
+
+TASK05|TEXT|example_usage.txt|Provide an example usage of the `solve_equation` function, demonstrating how to call it with different inputs and expected outputs.
+
+TASK06|CODE|main.py|Write a Python script that imports and uses the functions from `utils.py`, including the `solve_equation` function, to solve a simple equation and print the result.

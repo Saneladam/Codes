@@ -1,0 +1,13 @@
+from sympy import symbols, Eq, solve
+
+# Define variables
+x = symbols('x')
+y = symbols('y')
+
+# Create an equation
+eq = Eq(x + y, 5)
+
+# Solve the equation
+solution = solve(eq, (x, y))
+
+print(solution)

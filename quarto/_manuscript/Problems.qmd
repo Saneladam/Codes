@@ -1,0 +1,49 @@
+---
+title: "Finite Difference Methods"
+author: "Your Name"
+format: html
+execute:
+  echo: true
+  cache: false
+---
+
+## Introduction
+
+We solve the 1D Poisson equation:
+
+$$
+-\\frac{d^2 u}{dx^2} = f(x)
+$$
+
+```{python}
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.linspace(0, 1, 100)
+plt.plot(x, np.sin(np.pi*x))
+plt.xlabel("x")
+plt.ylabel("u(x)")
+plt.show()
+```
+
+---
+
+# Introduction
+
+**Hello, world!** In this simple Python script, we'll demonstrate how to print 'Hello World' using the `print` function.
+
+```python
+# Import necessary library
+import sys
+
+# Function to greet
+def greet():
+    print('Hello, World')
+
+# Main method
+if __name__ == '__main__':
+    greet()
+```
+
+This script uses **Python** and can be executed within this Quarto environment.
+

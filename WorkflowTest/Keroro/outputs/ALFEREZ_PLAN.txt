@@ -1,0 +1,44 @@
+TASK01|TEXT|workshop_outline.txt|Create a 4-6 hour workshop outline with 3 breaks, including a snack break and two coffee breaks, and describe the interactive sessions and activities.
+
+TASK02|CODE|script.py|Write a complete runnable Python script to create a virtual machine using a cloud provider (e.g. AWS, Google Cloud) and install a Linux distribution (e.g. Ubuntu, Debian) on it, with the following specifications:
+  - Function name: `vm_creator`
+  - Inputs: `cloud_provider`, `linux_distribution`
+  - Outputs: `vm_id`
+  - Libraries allowed: `boto3`, `paramiko`
+  Output only the code.
+
+TASK03|TEXT|linux_commands.txt|List 10-15 fun and interactive Linux commands, including:
+  - `ldp` for downloading videos and music from YouTube
+  - `ollama` for writing and interacting with local AI
+  - `openssh` for secure file transfer
+  - Other commands for exploring and customizing the Linux environment
+
+TASK04|CODE|script.py|Write a Python function to create a simple AI-powered chatbot using a library (e.g. `nltk`, `tensorflow`) and integrate it with the `ollama` command, with the following specifications:
+  - Function name: `chatbot`
+  - Inputs: `input_text`
+  - Outputs: `response_text`
+  - Libraries allowed: `nltk`, `tensorflow`
+  Output only the code.
+
+TASK05|TEXT|workshop_materials.txt|Create a list of materials and resources needed for the workshop, including:
+  - Virtual machine images
+  - Linux distributions
+  - Python libraries
+  - AI models
+  - Snacks and drinks
+
+TASK06|CODE|script.py|Write a Python script to automate the process of creating a new user account on the virtual machine, with the following specifications:
+  - Function name: `new_user`
+  - Inputs: `username`, `password`
+  - Outputs: `user_id`
+  - Libraries allowed: `paramiko`, `boto3`
+  Output only the code.
+
+TASK07|TEXT|workshop_schedule.txt|Create a schedule for the workshop, including the time allocated for each interactive session and break.
+
+TASK08|CODE|script.py|Write a Python script to monitor the workshop's progress and provide real-time feedback to the participants, with the following specifications:
+  - Function name: `workshop_monitor`
+  - Inputs: `participant_id`, `activity`
+  - Outputs: `feedback`
+  - Libraries allowed: `socket`, `threading`
+  Output only the code.

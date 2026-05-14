@@ -1,0 +1,1 @@
+Write a complete runnable Python script using SymPy, including a function named `solve_equation` that takes two inputs (a string and an integer) and returns the solution as an output.

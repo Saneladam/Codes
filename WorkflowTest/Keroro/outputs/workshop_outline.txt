@@ -1,0 +1,56 @@
+I. Introduction (9:00-9:30)
+  Brief overview of the workshop and its objectives
+  Workshop rules and expectations
+
+II. Linux Basics (9:30-10:30)
+  Installing and running a Linux VM
+  Basic commands (cd, ls, mkdir, etc.)
+  File management and organization
+
+III. Scripting with Python (10:50-11:50)
+  Introduction to Python
+  Basic scripting concepts
+  Fun project: ollama (write and interact with local AI)
+
+IV. Networking with SSH (12:20-13:20)
+  Introduction to SSH
+  Connecting to a remote server
+  File transfer and security
+
+V. Linux File System (13:40-15:00)
+  Exploring the Linux file system
+  Creating and managing files
+  File system security and permissions
+
+VI. Wrap-up and Q&A (15:00- End)
+  Summary of the workshop and its objectives
+  Q&A session for attendees to ask questions and clarify any doubts.
+
+VII. Agenda and Schedule
+  9:00-9:30: Introduction
+  9:30-10:30: Linux Basics
+  10:50-11:50: Scripting with Python
+  12:20-13:20: Networking with SSH
+  13:40-15:00: Linux File System
+  15:00- End: Wrap-up and Q&A
+
+VIII. Required Materials and Equipment
+  Virtual machine images
+  Linux distributions
+  Python libraries
+  AI models
+  Snacks and drinks
+
+IX. Expected Outcomes and Skills
+  Install and run a Linux VM
+  Use basic commands (cd, ls, mkdir, etc.)
+  Manage files and directories
+  Write and interact with local AI
+  Connect to a remote server using SSH
+  Use file transfer and security features
+
+X. Interactive Sessions and Activities
+  Linux Basics: Installing and running a Linux VM
+  Scripting with Python: Writing and interacting with local AI
+  Networking with SSH: Connecting to a remote server
+  Linux File System: Exploring and managing files

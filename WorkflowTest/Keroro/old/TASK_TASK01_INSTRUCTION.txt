@@ -1,0 +1,1 @@
+Create a README file with a brief introduction to SymPy and its usage.

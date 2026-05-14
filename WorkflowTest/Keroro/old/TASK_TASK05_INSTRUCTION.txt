@@ -1,0 +1,1 @@
+Provide an example usage of the `solve_equation` function, demonstrating how to call it with different inputs and expected outputs.

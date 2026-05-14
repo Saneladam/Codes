@@ -1,0 +1,1 @@
+Write a Python script that imports and uses the functions from `utils.py`, including the `solve_equation` function, to solve a simple equation and print the result.

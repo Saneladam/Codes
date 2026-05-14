@@ -1,0 +1,13 @@
+# Fdb version 4
+["pdflatex"] 1774197823.48605 "/home/akash/Code/latex/gnuplot_interaction/cairolatex.tex" "cairolatex.pdf" "cairolatex" 1774197823.56413 2
+  "/home/akash/Code/latex/gnuplot_interaction/cairolatex.tex" 1774197823.33078 10327 3a66df7b354ff2ebda93e2917a71566f ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1772820570 1328 c834bbb027764024c09d3d2bf908b5f0 ""
+  "/usr/share/texmf-dist/web2c/texmf.cnf" 1772820570 43569 fd570f2fa160877d211e859f687312ba ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1772880284 2328184 4c70d21fe053b86de6a92e4343e21f82 ""
+  "cairolatex.aux" 1774197815.48527 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "cairolatex.tex" 1774197823.33078 10327 3a66df7b354ff2ebda93e2917a71566f ""
+  (generated)
+  "cairolatex.aux"
+  "cairolatex.log"
+  "cairolatex.pdf"
+  (rewritten before read)

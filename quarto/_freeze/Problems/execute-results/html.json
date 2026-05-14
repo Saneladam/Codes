@@ -1,0 +1,12 @@
+{
+  "hash": "a279837b3c66ea9da441270d7d67af20",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"Finite Difference Methods\"\nauthor: \"Your Name\"\nformat: html\nexecute:\n  echo: true\n  cache: false\n---\n\n## Introduction\n\nWe solve the 1D Poisson equation:\n\n$$\n-\\\\frac{d^2 u}{dx^2} = f(x)\n$$\n\n::: {#179c7a75 .cell execution_count=1}\n``` {}\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nx = np.linspace(0, 1, 100)\nplt.plot(x, np.sin(np.pi*x))\nplt.xlabel(\"x\")\nplt.ylabel(\"u(x)\")\nplt.show()\n```\n\n::: {.cell-output .cell-output-display}\n![](Problems_files/figure-html/cell-2-output-1.png){width=589 height=429}\n:::\n:::\n\n\n:::{#a5a64da3 .cell .markdown}\n---\n\n# Introduction\n\n**Hello, world!** In this simple Python script, we'll demonstrate how to print 'Hello World' using the `print` function.\n\n```python\n# Import necessary library\nimport sys\n\n# Function to greet\ndef greet():\n    print('Hello, World')\n\n# Main method\nif __name__ == '__main__':\n    greet()\n```\n\nThis script uses **Python** and can be executed within this Quarto environment.\n:::\n\n",
+    "supporting": [
+      "Problems_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}
