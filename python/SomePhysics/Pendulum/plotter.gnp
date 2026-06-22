@@ -1,0 +1,7 @@
+set terminal pngcairo
+set output "Comparison.png"
+set title "Comparison of Double vs Simple Pendulum"
+set xlabel "Time [s]"
+plot "./simple_pendulum.dat" u 1:2 w l title "SP", "./double_pendulum.dat" u 1:2 w l title "DP"
+
+
