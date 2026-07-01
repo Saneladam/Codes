@@ -9,6 +9,7 @@
 #               Never say "If" writing a Bash script! (Exit codes & logical
 #               operators) 
 # =============================================================================
+
 : << 'LOGICAL OPERATORS TO USE ELEGANTLY'
 ; && || &
 LOGICAL OPERATORS TO USE ELEGANTLY

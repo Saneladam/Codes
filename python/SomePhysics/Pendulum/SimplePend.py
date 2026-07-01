@@ -24,7 +24,7 @@ l = 1  # m
 m = 1  # kg located at the end point of the pendulum
 
 timeFINAL = 50  # s
-theta0 = 0.90 * np.pi
+theta0 = 0.50 * np.pi
 
 FPS = 60
 frame_step = int((1 / FPS) / dt)

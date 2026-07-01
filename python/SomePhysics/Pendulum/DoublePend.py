@@ -11,6 +11,8 @@
 
 # %% Imports
 from pathlib import Path
+from matplotlib import figure
+from matplotlib.figure import FigureBase
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
@@ -94,7 +96,7 @@ fig, ax = plt.subplots()
 ax.set_xlim(-1.2 * lA - 1.2 * lB, 1.2 * lA + 1.2 * lB)
 ax.set_ylim(-1.2 * lB - 1.2 * lB, 1.2 * lA + 1.2 * lB)
 ax.set_aspect("equal")
-ax.set_title("Simple pendulum (Euler integration)")
+ax.set_title("Double pendulum (Euler integration)")
 time_text = ax.text(0.02, 0.95, "", transform=ax.transAxes)
 
 (lineA,) = ax.plot([], [], "o-", color="blue", lw=2)

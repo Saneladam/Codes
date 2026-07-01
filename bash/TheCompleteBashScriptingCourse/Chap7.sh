@@ -1,14 +1,19 @@
 #!/bin/bash
 
 # =============================================================================
-# Authors:      Roman Garcia Guill
+# Authors:      Román García Guill
 # Contact:      romangarciaguill@gmail.com
-# Created:      Sat 06. Dec 2025
+# Created:      Fri 26. Jun 2026
 #
-# Purpose:      Go through Bash, Shell and UNIX Chaddery 
+# Purpose:       
 # =============================================================================
 
-var="apple orange"
+my-func() {
+    echo 'Hi'
+    return 69
+}
 
-echo "${var%% *}"
-echo "${var##* }"
+var=$(my-func)
+code=$?
+
+echo "output=$var, code=$code"
