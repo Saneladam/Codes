@@ -127,6 +127,7 @@ def read_mission():
         return mission_file.read_text()
     return ""
 
+
 def read_task_instruction(task_id):
     task_file = OUTPUT_DIR / f"{task_id}_INSTRUCTION.txt"
     if task_file.exists():
