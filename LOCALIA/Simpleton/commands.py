@@ -15,44 +15,53 @@ import os
 
 from ollama import chat
 
-from rich import prompt
 from rich.console import Console
-from rich.prompt import Prompt
 from rich.live import Live
 from rich.text import Text
-
-console = Console()
-
-# %% Constants
+from dataclasses import dataclass, field
 
 MODEL = "xentriom/gemma-4-12B-coder-fable5-composer2.5-v1"
-model = MODEL
-IFILE = ""
-OFILE = ""
 
 SYSTEM_PROMPT = (
-    "You are an expert software engineer, Linux power user,"
-    "scientific programmer and technical writer."
-    "Poduce concise, correct and practical answers, with focus o "
-    "pysics rigurosity, python and bash good code writing and technica "
-    "poficiency in Linux open source KISS principle and"
+    "You are a machine with precise experty in software engineer, Linux,"
+    "scientific high performance programmer and technical writer."
+    "Produce concise, correct and practical computer output written in bash or python3 "
+    "with focus on giving an efficient and sensible response that can be executed "
+    "by a python or bash interpreter. Always include the proper shebang when generating scripts."
 )
+@dataclass
+class Session:
 
-messages = [
-    {
-        "role": "system",
-        "content": SYSTEM_PROMPT,
-    }
-]
+    model: str = MODEL
 
+    ifile: str = ""
+    ofile: str = ""
+
+    last_answer: str = ""
+
+    messages: list = field(default_factory=lambda: [
+        {
+            "role": "system",
+            "content": SYSTEM_PROMPT
+        }
+    ])
+session = Session()
 
 # %% Function Definition
+COMMANDS = {}
 
+def command(name):
+
+    def wrapper(func):
+        COMMANDS[name] = func
+        return func
+
+    return wrapper
 
 def print_help():
-    console.print(f"\t[Model  : '{MODEL}']")
-    console.print(f"\t[I-File : '{IFILE}']")
-    console.print(f"\t[O-File : '{OFILE}']")
+    console.print(f"\t[Model  : '{session.model}']")
+    console.print(f"\t[I-File : '{session.ifile}']")
+    console.print(f"\t[O-File : '{session.ofile}']")
     console.print()
     console.print("\t/q            Quit")
     console.print("\t/h            Help")
@@ -75,7 +84,7 @@ def copy_function(text):
     )
 
 
-def handle_command(command: str) -> bool:
+def handle_command(session, command: str) -> bool:
     """
     Returns True if command was handled.
     """
@@ -93,7 +102,7 @@ def handle_command(command: str) -> bool:
     #     return True
     if command == "/y":
         try:
-            copy_function(last_answer)
+            copy_function(session.last_answer)
             console.print("[green]Last message copied into clipboard.[/]")
         except NameError as e:
             console.print(f"[red]Upsi, no message to be copied. :/[/red]")
@@ -102,26 +111,13 @@ def handle_command(command: str) -> bool:
 
         return True
     if command.startswith("/i "):
-        global IFILE
-        IFILE = command[3:].strip()
-        # if IFILE:
-        #     with open(IFILE,'write') as f:
-        #
-        console.print("Input file:", IFILE)
+        session.ifile = command[3:].strip()
+        console.print("Input file:", session.ifile)
         return True
     if command.startswith("/o "):
-        global OFILE
-        OFILE = command[3:].strip()
-        console.print("Output file:", OFILE)
+        session.ofile = command[3:].strip()
+        console.print("Output file:", session.ofile)
         return True
-    # if command.startswith("/m "):
-    #     global model
-    #     model = command[3:].strip()
-    #     console.print(f"Model: {model}")
-    #     return True
-    # if command.startswith("/s "):
-    #     console.print("System prompt updated.")
-    #     return True
     if command.startswith("/!"):
         subprocess.run(
             command[2:],
@@ -133,9 +129,8 @@ def handle_command(command: str) -> bool:
     return False
 
 
-def ask(prompt: str):
-    global last_answer
-    messages.append(
+def ask(session, prompt: str):
+    session.messages.append(
         {
             "role": "user",
             "content": prompt,
@@ -144,32 +139,35 @@ def ask(prompt: str):
     answer = ""
     try:
         stream = chat(
-            model=model,
-            messages=messages,
-            stream=True,
+            model=session.model,
+            messages=session.messages,
+            stream=True
         )
         text = Text()
         with Live(text, refresh_per_second=20, console=console) as live:
             for chunk in stream:
                 piece = chunk["message"]["content"]
+                answer += piece
                 text.append(piece)
                 live.update(text)
     except Exception as e:
         console.print(f"[red]{e}[/red]")
         return
-    messages.append(
+    session.messages.append(
         {
             "role": "assistant",
             "content": answer,
         }
     )
-    last_answer = answer
+    session.last_answer = answer
 
 
 # %% Main
 def main():
-    console.rule("[bold magenta] L O C A L I A")
+    # console.rule("[bold red] L O C A L I A")
+    print("-"*33)
     print_help()
+    print("-"*33)
     while True:
         try:
             prompt = console.input("[bold blue]>>> [/]")
@@ -179,9 +177,9 @@ def main():
         if not prompt:
             continue
         if prompt.startswith("/"):
-            handle_command(prompt)
+            handle_command(session,prompt)
             continue
-        ask(prompt)
+        ask(session,prompt)
 
 
 if __name__ == "__main__":
