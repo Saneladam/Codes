@@ -8,21 +8,22 @@
 # Purpose:      Solve Egor probelms. 
 # =============================================================================
 
+dir_name=$( date +%V ) 
+
 encouraging_short_sound() {
     pass
 }
 
-def_file_name=$( date ) 
-week_name=$( date -V ) 
-sound=encouraging_short_sound
+def_file_name=$( date +%d%m%y_%H%M ) 
+input_dir_name() {
+    read -r "input_dir"
+    if [[ -z $input_dir ]]; then
+        input_dir="$def_file_name"
+    fi
+}
 
-dir_name=$( $week_name )
-input_dir_name
-
-if [[ -z $input_dir_name ]]; then
-    pass
-fi
-mkdir -p "$week_name"
-mkdir -p "$week_name/TEXT"
-mkdir -p "$week_name/GEO"
+input_dir_nameencouraging_short_sound
+mkdir -p "$dir_name"
+mkdir -p "$dir_name/TEXT"
+mkdir -p "$dir_name/GEO"
 find -n -i *.mtl -e { rm -- }
