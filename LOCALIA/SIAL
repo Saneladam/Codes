@@ -1,0 +1,5 @@
+#!/usr/bin/env python3
+
+# from dataclasses import dataclass, field
+
+print("Welcome to SIAL, the simple and local IA interface.")

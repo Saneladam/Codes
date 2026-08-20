@@ -11,7 +11,7 @@
 import math
 
 V = [[0 for x in range(0, 101, 1)] for y in range(0, 101, 1)]
-pot = 1000
+pot = 100
 
 for i in range(1000):  # iterations
     for x in range(30, 71, 1):  # keep two plates at +pot and -pot respecrively
