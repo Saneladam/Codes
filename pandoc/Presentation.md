@@ -1,6 +1,6 @@
 ---
 title: 
-- Test Presentation 
+- Test Presentation with Viktor
 author: 
 - Román García Guill 
 theme:
@@ -9,15 +9,37 @@ theme:
 
 # Section heading
 
-Here is a text.
+Qué hacer para el juego de cartas?
 
-+ This is a list
++ Definir mapa
 
-+ another item
++ Definir modo de juego
 
-+ yet another one
++ Definir roles
+    - piezas
 
-# Section 2
+# Section l Definir mapa
+medio fantasia
+avances tecnológicos
+
+# Section 2 Definir modo de juego
+recursos tipo catan
+civilizations
+puedes mover los recursos por el tablero
+se puede comerciar
+
+# Section 3 Definir roles
+fantasma
+vampiros
+ocultistas
+cruzados
+reptilianos
+masones
+político
+---------
+---------
+
+---------
 
 ## subsection
 
