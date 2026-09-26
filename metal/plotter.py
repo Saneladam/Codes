@@ -19,7 +19,11 @@ z = data["z"]
 
 
 fig = plt.figure()
-ax = fig.add_subplot(111, projection="3d")
+
+ax = fig.add_subplot(
+    111,
+    projection="3d",
+)
 
 ax.plot_surface(
     x,
@@ -28,7 +32,6 @@ ax.plot_surface(
     linewidth=0,
     antialiased=True,
 )
-
 
 ax.set_box_aspect((1, 1, 1))
 
